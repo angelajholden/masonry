@@ -1,0 +1,22 @@
+.grid {
+	column-count: 6; /* Number of masonry columns */
+	column-gap: 1.5rem; /* Space between columns */
+
+	// 1200, 1024, 960, 768, 600
+
+	@media (max-width: 1900px) {
+		column-count: 5;
+	}
+
+	@media (max-width: 1400px) {
+		column-count: 4;
+	}
+
+	@media (max-width: 1024px) {
+		column-count: 3;
+	}
+
+	@media (max-width: 768px) {
+		column-count: 2;
+	}
+}
