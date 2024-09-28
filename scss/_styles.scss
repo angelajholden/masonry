@@ -37,16 +37,73 @@ img {
 	width: 1px;
 }
 
+.main {
+	padding: 15px;
+}
+
 .inner-wrap {
 	max-width: 90%;
 	margin: 0 auto;
 }
 
-.figure {
-	margin: 0 0 1.5rem;
-	// grid-row: span 15;
+.css-description {
+	max-width: 75ch;
+}
 
+.primary-heading {
+	font-weight: 400;
+}
+
+// Button and description styles
+.css-type {
+	appearance: none;
+	padding: 1.5rem;
+	margin: 0.5rem;
+	border: 2px solid $mint;
+	border-radius: 10px;
+	background-color: $mint;
+	color: $black;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus,
+	&.column,
+	&.css3 {
+		background-color: $white;
+	}
+}
+
+.css-type ~ .css-description {
+	.text-container {
+		display: none;
+	}
+}
+
+.css-type.column ~ .css-description {
+	.text-container.column {
+		display: block;
+	}
+}
+
+.css-type.css3 ~ .css-description {
+	.text-container.css3 {
+		display: block;
+	}
+}
+
+// Section image styles
+.figure {
 	img {
 		border-radius: 20px;
 	}
+}
+
+section.css3 .figure {
+	margin: 0;
+}
+
+section.column .figure {
+	margin: 0 0 1.4rem;
 }

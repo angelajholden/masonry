@@ -10,20 +10,61 @@
 		<link rel="stylesheet" href="main.css" />
 	</head>
 	<body>
-		<header class="header">
-			<!-- header stuff goes here later -->
-		</header>
 		<main class="main">
 			<div class="inner-wrap">
-				<section class="grid">
+				<button class="css-type column">Column Count</button>
+				<button class="css-type">CSS3 Grid (Experiemental)</button>
+				<section class="css-description">
+					<p>
+						See the code on
+						<a href="https://github.com/angelajholden/masonry" target="_blank">Github</a>
+					</p>
+					<article class="text-container column">
+						<h1 class="primary-heading">Column Count CSS Masonry Layout</h1>
+						<p>
+							<code>column-count: 6</code>
+							This property controls how many columns your content will be split into. In this case, it creates 6 equal-width columns across the container. It's great for creating that multi-column, magazine-style layout where text or elements automatically flow from one column to the next.
+						</p>
+						<p>
+							<code>column-gap: 1.5rem</code>
+							This sets the space (or gap) between each of those columns. With 1.5rem, you're giving each column a bit of room to breathe, making sure they don't sit too close together. It helps keep things visually clean and avoids clutter.
+						</p>
+						<p>Basically, these two properties work together to create a nice, organized layout with multiple columns and controlled spacing between them. Perfect for layouts that need to display content in a neat, grid-like fashion!</p>
+					</article>
+					<article class="text-container css3">
+						<h1 class="primary-heading">CSS3 Grid Masonry Layout (Experiemental)</h1>
+						<p>
+							Read more about the proposed grid: masonry spec on the Webkit blog.
+							<a href="https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/" target="_blank">Help us invent CSS Grid Level 3, aka “Masonry” layout</a>
+							(You can see this working in Safari or Firefox when you enable this feature.)
+						</p>
+						<p>
+							<code>display: grid</code>
+							This kicks things off by turning the container into a grid. It's like setting up a flexible layout where items can be organized neatly.
+						</p>
+
+						<p>
+							<code>grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr))</code>
+							This part sets up the columns. It's saying, “Fill the container with as many columns as possible, each at least 14rem wide, but no bigger than 1 fraction (1fr) of the available space.” So, as the screen size changes, the number of columns will adjust automatically to fit.
+						</p>
+
+						<p>
+							<code>gap: 1.25rem</code>
+							This defines the space between grid items. It's like giving the elements some breathing room, so they don't look squished together.
+						</p>
+
+						<p>
+							<code>grid-template-rows: masonry</code>
+							This is the experimental bit! It creates a masonry-style layout for the rows, where the grid items stack vertically like bricks. This allows items of varying heights to fit together without leaving awkward gaps, similar to how Pinterest or other masonry-style layouts work.
+						</p>
+						<p>Together, these properties create a dynamic grid that automatically adjusts based on screen size and keeps everything tightly packed in a cool masonry layout, perfect for image galleries or cards with varying content heights.</p>
+					</article>
+				</section>
+				<section class="grid column">
 					<!-- images dynamically generated with javascript in main.js -->
 				</section>
 			</div>
 		</main>
-		<footer class="footer">
-			&copy;
-			<span id="date"></span>
-		</footer>
 		<script src="main.js"></script>
 	</body>
 </html>

@@ -1,3 +1,36 @@
+function toggleLayout() {
+	// Select both buttons and the section
+	const buttonColumn = document.querySelectorAll(".css-type")[0];
+	const buttonCss3 = document.querySelectorAll(".css-type")[1];
+	const gridSection = document.querySelector(".grid");
+
+	// Add event listener for the first button (Column Count)
+	buttonColumn.addEventListener("click", function () {
+		// Set "column" class on the button and the section
+		buttonColumn.classList.add("column");
+		buttonColumn.classList.remove("css3");
+
+		buttonCss3.classList.remove("css3");
+		buttonCss3.classList.remove("column");
+
+		gridSection.classList.add("column");
+		gridSection.classList.remove("css3");
+	});
+
+	// Add event listener for the second button (CSS3 Grid)
+	buttonCss3.addEventListener("click", function () {
+		// Set "css3" class on the button and the section
+		buttonCss3.classList.add("css3");
+		buttonCss3.classList.remove("column");
+
+		buttonColumn.classList.remove("column");
+		buttonColumn.classList.remove("css3");
+
+		gridSection.classList.add("css3");
+		gridSection.classList.remove("column");
+	});
+}
+
 // Function to create 36 figures with random images
 function createRandomImages() {
 	const grid = document.querySelector(".grid");
@@ -24,4 +57,5 @@ function createRandomImages() {
 
 document.addEventListener("DOMContentLoaded", () => {
 	createRandomImages();
+	toggleLayout();
 });
