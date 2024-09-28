@@ -1,4 +1,4 @@
-# CSS Layout Examples
+`# CSS Layout Examples
 
 ## 1. CSS Columns Layout
 
@@ -25,7 +25,7 @@ The CSS3 Grid Masonry Layout is a flexible way to display items of varying heigh
 ```css
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 	gap: 1.25rem;
 	grid-template-rows: masonry;
 }
@@ -34,7 +34,7 @@ The CSS3 Grid Masonry Layout is a flexible way to display items of varying heigh
 ### Explanation:
 
 -   **`display: grid`**: This kicks things off by turning the container into a grid. It’s like setting up a flexible layout where items can be organized neatly.
--   **`grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr))`**: This part sets up the columns. It’s saying, “Fill the container with as many columns as possible, each at least 14rem wide, but no bigger than 1 fraction (1fr) of the available space.” So, as the screen size changes, the number of columns will adjust automatically to fit.
+-   **`grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr))`**: This part sets up the columns. It’s saying, “Fill the container with as many columns as possible, each at least 18rem wide, but no bigger than 1 fraction (1fr) of the available space.” So, as the screen size changes, the number of columns will adjust automatically to fit.
 -   **`gap: 1.25rem`**: This defines the space between grid items. It’s like giving the elements some breathing room, so they don’t look squished together.
 
 -   **`grid-template-rows: masonry`**: This is the experimental bit! It creates a masonry-style layout for the rows, where the grid items stack vertically like bricks. This allows items of varying heights to fit together without leaving awkward gaps, similar to how Pinterest or other masonry-style layouts work.
