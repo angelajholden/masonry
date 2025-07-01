@@ -1,4 +1,12 @@
-`# CSS Layout Examples
+# CSS Layout Examples
+
+![HTML](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-hotpink.svg?style=flat&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Watch the Build](https://img.shields.io/badge/YouTube-Watch-blue?logo=youtube)](https://www.youtube.com/playlist?list=PLiEcEGGtRVumRhxEce2kz82XR-aa9FIGD)
+
+_This project is part of a free, open-source series focused on helping newer developers practice HTML/CSS with real-world examples._
 
 ## 1. CSS Columns Layout
 
@@ -40,3 +48,55 @@ The CSS3 Grid Masonry Layout is a flexible way to display items of varying heigh
 -   **`grid-template-rows: masonry`**: This is the experimental bit! It creates a masonry-style layout for the rows, where the grid items stack vertically like bricks. This allows items of varying heights to fit together without leaving awkward gaps, similar to how Pinterest or other masonry-style layouts work.
 
 Together, these properties create a dynamic grid that automatically adjusts based on screen size and keeps everything tightly packed in a cool masonry layout, perfect for image galleries or cards with varying content heights.
+
+---
+
+## 🔴 YouTube
+
+🎥 **Watch the build in action** on my [YouTube channel](https://www.youtube.com/@angelajholden) — or check out the
+[project playlist](https://www.youtube.com/playlist?list=PLiEcEGGtRVumRhxEce2kz82XR-aa9FIGD) to follow the full step-by-step process.
+
+---
+
+## 🔗 See the site live
+
+-   [Live demo on Heroku](https://masonry-454c1d7e5728.herokuapp.com/)
+
+---
+
+## 🚀 Quick Start
+
+### ✅ Git Clone
+
+```bash
+git clone git@github.com:angelajholden/masonry.git
+```
+
+### ✅ Live Server
+
+If you're using VS Code, I recommend using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to run and view the site in your browser.
+
+### ✅ Sass Watch
+
+```bash
+sass --watch scss/styles.scss:styles.css --style compressed
+```
+
+Or use the VS Code extension [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass).
+
+---
+
+## 📜 License
+
+This project is released as an open-source, free-to-use static website template under the [MIT License](LICENSE.md). You are welcome to **use, modify, and distribute** the code for personal or commercial projects, with or without attribution.
+
+---
+
+### 🎨 Design Attribution
+
+The visual design of this template was adapted from an original design.
+
+-   The code in this repository is 100% original and written by me.
+-   This project may not be resold, re-uploaded, or redistributed as a template or theme on marketplaces.
+
+If you fork this project, please make sure your use complies with the terms of the ThemeForest license.
