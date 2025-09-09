@@ -60,7 +60,7 @@ Together, these properties create a dynamic grid that automatically adjusts base
 
 ## 🔗 See the site live
 
--   [Live demo on Heroku](https://masonry-454c1d7e5728.herokuapp.com/)
+-   [Live demo on Github Pages](https://angelajholden.github.io/masonry/)
 
 ---
 
